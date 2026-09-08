@@ -1,13 +1,19 @@
 import argparse
+from concurrent.futures import ThreadPoolExecutor, as_completed
 import json
+import os
 from pathlib import Path
 
 from .analysis import analyze
 from .evaluation import evaluate_all
-from .llm import LLMConfig, OpenAICompatibleClient
+from .llm import Enrichment, LLMConfig, OpenAICompatibleClient
 from .models import Candidate
 from .render import render_memo, slugify
 from .sources.yc import collect_snapshot
+
+
+DEFAULT_LLM_ENDPOINT = "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions"
+DEFAULT_LLM_MODEL = "gemini-3.6-flash"
 
 
 def main() -> None:
@@ -25,7 +31,8 @@ def main() -> None:
 
     args.output.mkdir(parents=True, exist_ok=True)
     client = _build_llm_client(args)
-    analyses = [analyze(candidate, client.enrich(candidate) if client else None) for candidate in candidates]
+    enrichments = _enrich_all(candidates, client, args.output, args.llm_workers) if client else {}
+    analyses = [analyze(candidate, enrichments.get(candidate.source_url)) for candidate in candidates]
     analyses.sort(key=lambda item: item.total, reverse=True)
 
     _write_outputs(analyses, args.output, snapshot_date)
@@ -55,18 +62,24 @@ def _add_llm_arguments(parser: argparse.ArgumentParser) -> None:
     )
     parser.add_argument(
         "--llm-endpoint",
-        default="https://api.openai.com/v1/chat/completions",
+        default=os.getenv("SIGNALDESK_LLM_ENDPOINT", DEFAULT_LLM_ENDPOINT),
         help="Chat-completions-compatible endpoint.",
     )
     parser.add_argument(
         "--llm-model",
-        default="gpt-4.1-mini",
+        default=os.getenv("SIGNALDESK_LLM_MODEL", DEFAULT_LLM_MODEL),
         help="Model name sent to the configured endpoint.",
     )
     parser.add_argument(
         "--llm-api-key-env",
         default="SIGNALDESK_LLM_API_KEY",
         help="Environment variable holding the API key.",
+    )
+    parser.add_argument(
+        "--llm-workers",
+        type=int,
+        default=1,
+        help="Number of concurrent LLM requests; use 1 for conservative rate limiting.",
     )
     parser.add_argument(
         "--dry-run",
@@ -93,6 +106,67 @@ def _build_llm_client(args: argparse.Namespace) -> OpenAICompatibleClient | None
         api_key_env=args.llm_api_key_env,
     )
     return OpenAICompatibleClient(config)
+
+
+def _enrich_all(
+    candidates: list[Candidate], client: OpenAICompatibleClient, output_path: Path, workers: int
+) -> dict[str, Enrichment]:
+    """Resume LLM synthesis from a local checkpoint after an interrupted batch."""
+    checkpoint_path = output_path / "llm-checkpoint.json"
+    cached = _load_checkpoint(checkpoint_path, candidates, client.config)
+    if workers < 1:
+        raise ValueError("--llm-workers must be at least 1")
+    pending = [candidate for candidate in candidates if candidate.source_url not in cached]
+    errors = []
+    with ThreadPoolExecutor(max_workers=workers) as executor:
+        futures = {executor.submit(client.enrich, candidate): candidate for candidate in pending}
+        for future in as_completed(futures):
+            candidate = futures[future]
+            try:
+                cached[candidate.source_url] = future.result()
+            except Exception as error:
+                errors.append((candidate.name, error))
+                continue
+            _write_checkpoint(checkpoint_path, candidates, cached)
+            print(f"Synthesized {candidate.name} ({len(cached)}/{len(candidates)}).")
+    if errors:
+        names = ", ".join(name for name, _ in errors)
+        raise RuntimeError(f"LLM synthesis failed for {names}; rerun to resume from the checkpoint.") from errors[0][1]
+    checkpoint_path.unlink(missing_ok=True)
+    return cached
+
+
+def _load_checkpoint(
+    checkpoint_path: Path, candidates: list[Candidate], config: LLMConfig
+) -> dict[str, Enrichment]:
+    if not checkpoint_path.exists():
+        return {}
+    raw = json.loads(checkpoint_path.read_text())
+    if raw.get("endpoint") != config.endpoint or raw.get("model") != config.model:
+        return {}
+    by_url = {candidate.source_url: candidate for candidate in candidates}
+    cached = {}
+    for item in raw.get("entries", []):
+        candidate = by_url.get(item.get("source_url"))
+        if candidate:
+            cached[candidate.source_url] = Enrichment.from_response(
+                item["enrichment"], candidate, config.endpoint, config.model
+            )
+    return cached
+
+
+def _write_checkpoint(
+    checkpoint_path: Path, candidates: list[Candidate], cached: dict[str, Enrichment]
+) -> None:
+    entries = [
+        {"company": candidate.name, "source_url": candidate.source_url, "enrichment": cached[candidate.source_url].as_dict()}
+        for candidate in candidates
+        if candidate.source_url in cached
+    ]
+    first = next(iter(cached.values()))
+    checkpoint_path.write_text(
+        json.dumps({"endpoint": first.provider, "model": first.model, "entries": entries}, indent=2) + "\n"
+    )
 
 
 def _print_preflight(candidates: list[Candidate], args: argparse.Namespace) -> None:

@@ -4,6 +4,8 @@ from __future__ import annotations
 
 import json
 import os
+import ssl
+import time
 import urllib.error
 import urllib.request
 from dataclasses import asdict, dataclass
@@ -94,6 +96,9 @@ class Transport(Protocol):
 
 
 class UrllibTransport:
+    _MAX_ATTEMPTS = 3
+    _RETRYABLE_STATUS_CODES = {500, 502, 503, 504}
+
     def post_json(
         self,
         url: str,
@@ -106,14 +111,19 @@ class UrllibTransport:
             headers=headers,
             method="POST",
         )
-        try:
-            with urllib.request.urlopen(request, timeout=45) as response:
-                return json.loads(response.read())
-        except urllib.error.HTTPError as error:
-            body = error.read().decode(errors="replace")[:500]
-            raise LLMError(f"LLM API returned HTTP {error.code}: {body}") from error
-        except urllib.error.URLError as error:
-            raise LLMError(f"Could not reach LLM API: {error.reason}") from error
+        for attempt in range(self._MAX_ATTEMPTS):
+            try:
+                with urllib.request.urlopen(request, timeout=45, context=_ssl_context()) as response:
+                    return json.loads(response.read())
+            except urllib.error.HTTPError as error:
+                body = error.read().decode(errors="replace")[:500]
+                if error.code in self._RETRYABLE_STATUS_CODES and attempt < self._MAX_ATTEMPTS - 1:
+                    time.sleep(2**attempt)
+                    continue
+                raise LLMError(f"LLM API returned HTTP {error.code}: {body}") from error
+            except urllib.error.URLError as error:
+                raise LLMError(f"Could not reach LLM API: {error.reason}") from error
+        raise AssertionError("LLM retry loop exited unexpectedly")
 
 
 class OpenAICompatibleClient:
@@ -182,6 +192,11 @@ class OpenAICompatibleClient:
             provider=self.config.endpoint,
             model=self.config.model,
         )
+
+
+def _ssl_context() -> ssl.SSLContext:
+    ca_bundle = os.getenv("SIGNALDESK_CA_BUNDLE")
+    return ssl.create_default_context(cafile=ca_bundle) if ca_bundle else ssl.create_default_context()
 
 
 def _candidate_evidence(candidate: Candidate) -> dict[str, Any]:

@@ -37,8 +37,8 @@ export SIGNALDESK_LLM_API_KEY='your-key-here'
 python3 -m signaldesk run --input data/yc_ai_workflows.json --output outputs-llm --llm
 ```
 
-The adapter uses an OpenAI-compatible chat-completions endpoint by default. Any
-compatible provider can be used without a code change:
+The adapter uses Gemini's OpenAI-compatible chat-completions endpoint by default
+(`gemini-3.6-flash`). Any compatible provider can be used without a code change:
 
 ```bash
 python3 -m signaldesk run --input data/yc_ai_workflows.json --output outputs-llm --llm \

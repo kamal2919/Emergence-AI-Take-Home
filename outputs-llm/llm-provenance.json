@@ -1,0 +1,292 @@
+[
+  {
+    "company": "Leaping AI",
+    "source_url": "https://www.ycombinator.com/companies/leaping-ai",
+    "llm": {
+      "team_summary": "Leaping AI was founded in 2023 by Arkadiy Telegin and Kevin Wu, with YC listing 13 employees in San Francisco.",
+      "product_summary": "Leaping AI offers AI voice and texting agents for customer service, lead qualification, and appointment scheduling, handling customer-support and scheduling calls end-to-end.",
+      "market_summary": "Contact-center operations are expensive and measurable, but the initial customer profile spans several verticals.",
+      "risks": [
+        "Voice-agent reliability and escalation design are production-critical.",
+        "The company faces a crowded voice-AI market.",
+        "Verify retention and economics for a specific vertical rather than relying on aggregate satisfaction claims."
+      ],
+      "open_questions": [
+        "Whether one vertical produces a repeatable distribution wedge.",
+        "What are the retention and economics for specific verticals?"
+      ],
+      "source_urls": [
+        "https://www.leapingai.com",
+        "https://www.ycombinator.com/companies/leaping-ai"
+      ],
+      "provider": "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions",
+      "model": "gemini-3.6-flash"
+    }
+  },
+  {
+    "company": "Sage Care",
+    "source_url": "https://www.ycombinator.com/companies/sagecare",
+    "llm": {
+      "team_summary": "Sage Care was founded in 2024 by Ian Gillis and Jon Levinson. The company is listed by Y Combinator as an S24 batch company with 3 employees in San Francisco.",
+      "product_summary": "Sage Care is a HIPAA-compliant AI-native communication platform designed for home-care agency client intake, aiming to automate operations and save teams over 100 minutes of busywork per prospect.",
+      "market_summary": "Home-care intake represents a narrow, high-frequency operational job focused on time-saving outcomes. Total addressable market size and market growth metrics are not established in supplied evidence.",
+      "risks": [
+        "HIPAA and communication compliance must be production-grade.",
+        "The buyer's switching cost and workflow fit need reference validation.",
+        "A narrow vertical can constrain expansion if adjacent workflows are not credible."
+      ],
+      "open_questions": [
+        "Can the time-saving metric of over 100 minutes per prospect and customer retention be validated with references?",
+        "How credible are adjacent workflows for expanding beyond narrow home-care intake?",
+        "What are the exact switching costs and workflow integrations required by home-care agencies?"
+      ],
+      "source_urls": [
+        "https://sagecare.ai",
+        "https://www.ycombinator.com/companies/sagecare"
+      ],
+      "provider": "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions",
+      "model": "gemini-3.6-flash"
+    }
+  },
+  {
+    "company": "Parallel",
+    "source_url": "https://www.ycombinator.com/companies/parallel",
+    "llm": {
+      "team_summary": "Founded in 2024 by Paul Lafforgue, with 15 employees based in Paris, France.",
+      "product_summary": "AI agents that automate healthcare administrative workflows, starting with medical coding, with a focus on navigating legacy hospital software.",
+      "market_summary": "Medical coding is a costly and measurable administrative workflow with strong thesis fit, though regulatory exposure and enterprise hospital procurement make execution difficult.",
+      "risks": [
+        "Coding accuracy and auditability are non-negotiable.",
+        "Hospital purchasing cycles may be long.",
+        "Liability allocation and human review requirements need validation."
+      ],
+      "open_questions": [
+        "How does Parallel handle liability allocation and human review requirements in medical coding workflows?",
+        "What is the exact timeline and go-to-market strategy to handle long enterprise hospital purchasing cycles?"
+      ],
+      "source_urls": [
+        "https://parallel.ai",
+        "https://www.ycombinator.com/companies/parallel"
+      ],
+      "provider": "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions",
+      "model": "gemini-3.6-flash"
+    }
+  },
+  {
+    "company": "Peppr AI",
+    "source_url": "https://www.ycombinator.com/companies/peppr-ai",
+    "llm": {
+      "team_summary": "Peppr AI was founded in 2025 by Nitya Arora and Sachitt Arora, with 4 employees in San Francisco.",
+      "product_summary": "Peppr AI offers an in-call AI teleprompter designed to help enterprise sales reps close deals.",
+      "market_summary": "Targeting live sales-call coaching for revenue leaders, key market execution risks include long sales cycles and enterprise security reviews.",
+      "risks": [
+        "Enterprise procurement and security review can slow adoption.",
+        "Sales-enablement tools compete with incumbents and CRM-native features.",
+        "Validating whether the teleprompter improves close rates in production calls rather than demos is required."
+      ],
+      "open_questions": [
+        "Does the teleprompter tangibly improve close rates in actual production calls?",
+        "What is the company's current enterprise customer traction, which is not established in supplied evidence?"
+      ],
+      "source_urls": [
+        "https://www.usepeppr.ai",
+        "https://www.ycombinator.com/companies/peppr-ai"
+      ],
+      "provider": "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions",
+      "model": "gemini-3.6-flash"
+    }
+  },
+  {
+    "company": "Asteroid",
+    "source_url": "https://www.ycombinator.com/companies/asteroid",
+    "llm": {
+      "team_summary": "Asteroid was founded in 2024 by Joe Hewett and David Mlcoch, and YC lists 8 employees based in San Francisco.",
+      "product_summary": "Asteroid is an AI-powered integration layer for healthcare systems, payer portals, and legacy desktop software, with YC's automation directory listing it as active (W25 batch) with 100+ pre-built integrations.",
+      "market_summary": "Healthcare integration pain is specific and expensive, presenting an opportunity where ongoing integration maintenance could create a credible workflow-data and distribution advantage.",
+      "risks": [
+        "Healthcare compliance and EHR integration reliability are high-stakes.",
+        "The claimed integration breadth and implementation time require validation.",
+        "A platform story must resolve to a concrete operational buyer and first workflow."
+      ],
+      "open_questions": [
+        "What is the specific operational buyer and first targeted workflow for the platform?",
+        "How does Asteroid maintain compliance and integration reliability across legacy desktop software and payer portals?"
+      ],
+      "source_urls": [
+        "https://www.asteroid.ai",
+        "https://www.ycombinator.com/companies/asteroid"
+      ],
+      "provider": "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions",
+      "model": "gemini-3.6-flash"
+    }
+  },
+  {
+    "company": "Manifold Freight",
+    "source_url": "https://www.ycombinator.com/companies/manifold-freight",
+    "llm": {
+      "team_summary": "Founded in 2024 by Andrew Huff and Oliver Jones, former Convoy engineering leaders who worked on freight automation at scale. The company has 5 employees based in Seattle according to YC listings.",
+      "product_summary": "Software that aggregates spot-freight opportunities and automates booking work for carriers, brokers, and shippers. YC lists Manifold as W24 and reports $5,100 monthly revenue after two months in its public company description.",
+      "market_summary": "Freight procurement is operationally painful and highly measurable, where workflow economics matter significantly.",
+      "risks": [
+        "Marketplace liquidity and integration access can be difficult.",
+        "The public revenue figure is early and should not be extrapolated.",
+        "Validate whether automation changes carrier economics in a durable way."
+      ],
+      "open_questions": [
+        "How will Manifold Freight sustain long-term carrier economic improvements through automation?",
+        "What strategies will be used to scale marketplace liquidity and access integrations with brokers and carriers?"
+      ],
+      "source_urls": [
+        "https://manifoldfreight.com",
+        "https://www.ycombinator.com/companies/manifold-freight"
+      ],
+      "provider": "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions",
+      "model": "gemini-3.6-flash"
+    }
+  },
+  {
+    "company": "Osmosis",
+    "source_url": "https://www.ycombinator.com/companies/osmosis",
+    "llm": {
+      "team_summary": "Osmosis was founded in 2024 by Andy Lyu and Kasey Zhang. YC lists the company as active (W25 batch) with 6 employees based in San Francisco.",
+      "product_summary": "Osmosis is a reinforcement-learning post-training platform for task- and domain-specific language models. It features a CLI product designed for compute orchestration, reward modeling, and training observability.",
+      "market_summary": "Osmosis addresses agent reliability in the technical market, acting as infrastructure for AI companies rather than serving as a direct operational-workflow product.",
+      "risks": [
+        "Infrastructure buyers may consolidate around model vendors or cloud platforms.",
+        "Osmosis must prove durable performance gains across customer workloads.",
+        "The buyer and pricing model need validation beyond technical benchmarks."
+      ],
+      "open_questions": [
+        "What specific buyer persona and pricing model will be validated beyond technical benchmarks?",
+        "How will Osmosis demonstrate durable performance gains across customer workloads?"
+      ],
+      "source_urls": [
+        "https://osmosis.ai",
+        "https://www.ycombinator.com/companies/osmosis"
+      ],
+      "provider": "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions",
+      "model": "gemini-3.6-flash"
+    }
+  },
+  {
+    "company": "Quantstruct",
+    "source_url": "https://www.ycombinator.com/companies/quantstruct",
+    "llm": {
+      "team_summary": "Quantstruct was founded in 2025 by Newman Hu and Sarthak Srinivas, and has 2 employees in San Francisco according to YC listings.",
+      "product_summary": "Quantstruct builds AI agents that inspect product knowledge and enterprise software to create, test, auto-improve, and maintain product documentation, implementation guides, and changelogs.",
+      "market_summary": "Documentation work is frequent and expensive with an understandable buyer, but Quantstruct needs to show that its workflow is more than a feature of existing documentation platforms.",
+      "risks": [
+        "Product documentation is a crowded AI feature surface.",
+        "Autonomous browser interactions may be unreliable.",
+        "Need to verify whether customers pay for continuous improvement rather than periodic content generation."
+      ],
+      "open_questions": [
+        "Is Quantstruct's workflow defensible against incumbent documentation platforms adding similar features?",
+        "Will target customers pay for continuous documentation updates rather than periodic generation?",
+        "How reliable are the platform's autonomous browser interactions in practice?"
+      ],
+      "source_urls": [
+        "https://quantstruct.com",
+        "https://www.ycombinator.com/companies/quantstruct"
+      ],
+      "provider": "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions",
+      "model": "gemini-3.6-flash"
+    }
+  },
+  {
+    "company": "Browser Use",
+    "source_url": "https://www.ycombinator.com/companies/browser-use",
+    "llm": {
+      "team_summary": "Browser Use was founded in 2024 by Magnus M\u00fcller and Gregor Zunic. The YC W25 company has 7 employees based in San Francisco.",
+      "product_summary": "Browser Use is open-source software and an API that enables AI agents to control web browsers, achieving 110k+ GitHub stars.",
+      "market_summary": "Browser automation serves as a broad enabling layer. Open-source adoption is meaningful, but converting developer popularity into durable commercial capture is the key market question.",
+      "risks": [
+        "Browser reliability and anti-bot changes can make workflows brittle.",
+        "Open-source distribution does not itself establish monetization.",
+        "Large platforms may commoditize generic browser control."
+      ],
+      "open_questions": [
+        "How will Browser Use transition developer adoption into a durable commercial capture strategy?",
+        "How will Browser Use handle anti-bot defenses and web layout updates that break workflows?"
+      ],
+      "source_urls": [
+        "https://browser-use.com",
+        "https://www.ycombinator.com/companies/browser-use"
+      ],
+      "provider": "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions",
+      "model": "gemini-3.6-flash"
+    }
+  },
+  {
+    "company": "AutoPallet Robotics",
+    "source_url": "https://www.ycombinator.com/companies/autopallet-robotics",
+    "llm": {
+      "team_summary": "AutoPallet Robotics was founded in 2024 by Eric Miller and Nathan Yee, and YC lists 6 employees in San Francisco.",
+      "product_summary": "AutoPallet provides warehouse robotics for low-cost case picking and mixed-SKU palletization in existing warehouses using a lower-cost installation approach.",
+      "market_summary": "Warehouse labor is a costly workflow, but hardware deployment and capital intensity make this a poor fit for software-oriented implementation models.",
+      "risks": [
+        "Hardware reliability and deployment create capital and support needs.",
+        "Warehouse integrations and safety requirements slow sales.",
+        "Unit economics need validation against established automation vendors."
+      ],
+      "open_questions": [
+        "What are the detailed unit economics compared to established automation vendors?",
+        "How does the team plan to manage capital intensity and support needs during deployment?"
+      ],
+      "source_urls": [
+        "https://autopallet.bot",
+        "https://www.ycombinator.com/companies/autopallet-robotics"
+      ],
+      "provider": "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions",
+      "model": "gemini-3.6-flash"
+    }
+  },
+  {
+    "company": "Decisional AI",
+    "source_url": "https://www.ycombinator.com/companies/decisional-ai",
+    "llm": {
+      "team_summary": "Founded in 2024 by Sai Neeraj Kanuri, Adit Sanghvi, and Dhruv Tandon, Decisional AI has 3 employees in San Francisco.",
+      "product_summary": "Decisional AI provides a platform for creating self-healing automation agents across existing applications, utilizing natural-language workflow creation and background execution.",
+      "market_summary": "Self-healing automation addresses a real reliability problem, but positioning is currently horizontal, which presents market congestion challenges unless a vertical buyer and repeatable distribution motion are established.",
+      "risks": [
+        "Horizontal automation is a congested market.",
+        "Production reliability and permissions require careful controls.",
+        "Validate whether 'self-healing' is observable in customer operations."
+      ],
+      "open_questions": [
+        "Who is the primary vertical buyer and what is the repeatable distribution motion?",
+        "Is 'self-healing' observable and effective in real customer operations?"
+      ],
+      "source_urls": [
+        "https://decisional.ai",
+        "https://www.ycombinator.com/companies/decisional-ai"
+      ],
+      "provider": "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions",
+      "model": "gemini-3.6-flash"
+    }
+  },
+  {
+    "company": "Lucidic AI",
+    "source_url": "https://www.ycombinator.com/companies/lucidic-ai",
+    "llm": {
+      "team_summary": "Lucidic AI was founded in 2025 by Andy Liang, Abhinav Sinha, and Jeremy Tian in San Francisco, and is listed as active in YC W25.",
+      "product_summary": "Lucidic AI is a learning system intended to help AI agents build memory, skills, critique, practice, and improvement loops from experience.",
+      "market_summary": "Learning and memory are key agent infrastructure problems, though public positioning does not yet identify a narrow operational buyer or workflow.",
+      "risks": [
+        "A conceptual platform claim needs a sharply defined first use case.",
+        "Model-platform vendors can absorb broad learning-layer features.",
+        "Validate repeatable ROI outside benchmark demonstrations."
+      ],
+      "open_questions": [
+        "Who is the specific operational buyer or target workflow for Lucidic AI?",
+        "What evidence of repeatable ROI exists outside benchmark demonstrations?"
+      ],
+      "source_urls": [
+        "https://lucidic.ai",
+        "https://www.ycombinator.com/companies/lucidic-ai"
+      ],
+      "provider": "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions",
+      "model": "gemini-3.6-flash"
+    }
+  }
+]
