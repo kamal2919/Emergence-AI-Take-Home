@@ -1,0 +1,47 @@
+[
+  {
+    "company": "Sage Care",
+    "expected_recommendation": "Take a meeting",
+    "expected_score_range": [75, 85],
+    "min_evidence_records": 2,
+    "required_evidence_themes": ["home care", "time"],
+    "changes_mind_must_include": ["reference customer", "reliability"],
+    "max_memo_lines": 80
+  },
+  {
+    "company": "Lucidic AI",
+    "expected_recommendation": "Pass",
+    "expected_score_range": [40, 55],
+    "min_evidence_records": 2,
+    "required_evidence_themes": ["w25"],
+    "changes_mind_must_include": ["workflow", "buyer"],
+    "max_memo_lines": 80
+  },
+  {
+    "company": "Parallel",
+    "expected_recommendation": "Take a meeting",
+    "expected_score_range": [75, 85],
+    "min_evidence_records": 2,
+    "required_evidence_themes": ["healthcare", "coding"],
+    "changes_mind_must_include": ["reference customer", "reliability"],
+    "max_memo_lines": 80
+  },
+  {
+    "company": "AutoPallet Robotics",
+    "expected_recommendation": "Watch",
+    "expected_score_range": [55, 70],
+    "min_evidence_records": 2,
+    "required_evidence_themes": ["warehouse"],
+    "changes_mind_must_include": ["deployment", "customer"],
+    "max_memo_lines": 80
+  },
+  {
+    "company": "Peppr AI",
+    "expected_recommendation": "Take a meeting",
+    "expected_score_range": [75, 80],
+    "min_evidence_records": 2,
+    "required_evidence_themes": ["teleprompter", "enterprise"],
+    "changes_mind_must_include": ["reference customer", "reliability"],
+    "max_memo_lines": 80
+  }
+]

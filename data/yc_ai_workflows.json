@@ -1,0 +1,414 @@
+{
+  "snapshot_date": "2026-09-08",
+  "source": "Y Combinator public company directory",
+  "candidates": [
+    {
+      "name": "Leaping AI",
+      "website": "https://www.leapingai.com",
+      "description": "AI voice and texting agents for customer service, lead qualification, and appointment scheduling.",
+      "freshness_signal": "YC lists the company as W25 and active; its public profile says it handles customer-support and scheduling calls end-to-end.",
+      "source_url": "https://www.ycombinator.com/companies/leaping-ai",
+      "founder_signal": "Founded in 2023 by Arkadiy Telegin and Kevin Wu; YC lists 13 employees in San Francisco.",
+      "market_note": "Contact-center operations are expensive and measurable, but the initial customer profile spans several verticals. The meeting should test whether one vertical produces a repeatable distribution wedge.",
+      "risk_notes": [
+        "Voice-agent reliability and escalation design are production-critical.",
+        "The company faces a crowded voice-AI market.",
+        "Verify retention and economics for a specific vertical rather than relying on aggregate satisfaction claims."
+      ],
+      "scores": {
+        "workflow": 23,
+        "wedge": 15,
+        "demand": 17,
+        "team": 12,
+        "defensibility": 6,
+        "execution": 6
+      },
+      "evidence": [
+        {
+          "claim": "YC's public company page titles Leaping AI as AI voice and texting agents, founded in 2023 by Arkadiy Telegin and Kevin Wu with 13 employees in San Francisco.",
+          "source_url": "https://www.ycombinator.com/companies/leaping-ai",
+          "retrieved_at": "2026-09-08T18:03:02+00:00"
+        },
+        {
+          "claim": "YC lists the company as W25 and active; its public profile says it handles customer-support and scheduling calls end-to-end.",
+          "source_url": "https://www.ycombinator.com/companies/leaping-ai",
+          "retrieved_at": "2026-09-08T18:03:02+00:00"
+        }
+      ]
+    },
+    {
+      "name": "Peppr AI",
+      "website": "https://www.usepeppr.ai",
+      "description": "In-call AI teleprompter that helps enterprise sales reps close deals.",
+      "freshness_signal": "YC lists Peppr AI as W25 and active; the public profile describes an in-call teleprompter for enterprise deal closing.",
+      "source_url": "https://www.ycombinator.com/companies/peppr-ai",
+      "founder_signal": "Founded in 2025 by Nitya Arora and Sachitt Arora; YC lists 4 employees in San Francisco.",
+      "market_note": "Live sales-call coaching is a narrow, measurable workflow with a named buyer (revenue leaders). Enterprise security review and long sales cycles remain the main execution risks.",
+      "risk_notes": [
+        "Enterprise procurement and security review can slow adoption.",
+        "Sales-enablement tools compete with incumbents and CRM-native features.",
+        "Validate whether the teleprompter improves close rates in production calls rather than demos."
+      ],
+      "scores": {
+        "workflow": 20,
+        "wedge": 15,
+        "demand": 16,
+        "team": 10,
+        "defensibility": 7,
+        "execution": 8
+      },
+      "evidence": [
+        {
+          "claim": "YC's public company page titles Peppr AI as an in-call AI teleprompter that helps reps close enterprise deals, founded in 2025 by Nitya Arora and Sachitt Arora with 4 employees in San Francisco.",
+          "source_url": "https://www.ycombinator.com/companies/peppr-ai",
+          "retrieved_at": "2026-09-08T18:03:02+00:00"
+        },
+        {
+          "claim": "YC lists Peppr AI as W25 and active; the public profile describes an in-call teleprompter for enterprise deal closing.",
+          "source_url": "https://www.ycombinator.com/companies/peppr-ai",
+          "retrieved_at": "2026-09-08T18:03:02+00:00"
+        }
+      ]
+    },
+    {
+      "name": "Osmosis",
+      "website": "https://osmosis.ai",
+      "description": "A reinforcement-learning post-training platform for task- and domain-specific language models.",
+      "freshness_signal": "YC lists Osmosis as W25, active, and describes a CLI product for compute orchestration, reward modeling, and training observability.",
+      "source_url": "https://www.ycombinator.com/companies/osmosis",
+      "founder_signal": "Founded in 2024 by Andy Lyu and Kasey Zhang; YC lists 6 employees in San Francisco.",
+      "market_note": "Agent reliability is an important technical market, though this is infrastructure for AI companies rather than a direct operational-workflow product.",
+      "risk_notes": [
+        "Infrastructure buyers may consolidate around model vendors or cloud platforms.",
+        "Prove durable performance gains across customer workloads.",
+        "The buyer and pricing model need validation beyond technical benchmarks."
+      ],
+      "scores": {
+        "workflow": 12,
+        "wedge": 15,
+        "demand": 13,
+        "team": 13,
+        "defensibility": 7,
+        "execution": 7
+      },
+      "evidence": [
+        {
+          "claim": "YC's public company page titles Osmosis as reinforcement learning for AI agents, founded in 2024 by Andy Lyu and Kasey Zhang with 6 employees in San Francisco.",
+          "source_url": "https://www.ycombinator.com/companies/osmosis",
+          "retrieved_at": "2026-09-08T18:03:02+00:00"
+        },
+        {
+          "claim": "YC lists Osmosis as W25, active, and describes a CLI product for compute orchestration, reward modeling, and training observability.",
+          "source_url": "https://www.ycombinator.com/companies/osmosis",
+          "retrieved_at": "2026-09-08T18:03:02+00:00"
+        }
+      ]
+    },
+    {
+      "name": "Browser Use",
+      "website": "https://browser-use.com",
+      "description": "Open-source software and an API that enables AI agents to control web browsers.",
+      "freshness_signal": "YC's public automation directory lists Browser Use as W25, active, with 110k+ GitHub stars at the time of the directory snapshot.",
+      "source_url": "https://www.ycombinator.com/companies/browser-use",
+      "founder_signal": "Founded in 2024 by Magnus Müller and Gregor Zunic; YC lists 7 employees in San Francisco.",
+      "market_note": "Browser automation is a broad enabling layer. Open-source adoption is meaningful, but the path from developer popularity to durable commercial capture is the central question.",
+      "risk_notes": [
+        "Browser reliability and anti-bot changes can make workflows brittle.",
+        "Open-source distribution does not itself establish monetization.",
+        "Large platforms may commoditize generic browser control."
+      ],
+      "scores": {
+        "workflow": 11,
+        "wedge": 14,
+        "demand": 18,
+        "team": 9,
+        "defensibility": 5,
+        "execution": 6
+      },
+      "evidence": [
+        {
+          "claim": "YC's public company page titles Browser Use as agents that use the browser, founded in 2024 by Magnus Müller and Gregor Zunic with 7 employees in San Francisco.",
+          "source_url": "https://www.ycombinator.com/companies/browser-use",
+          "retrieved_at": "2026-09-08T18:03:02+00:00"
+        },
+        {
+          "claim": "YC's public automation directory lists Browser Use as W25, active, with 110k+ GitHub stars at the time of the directory snapshot.",
+          "source_url": "https://www.ycombinator.com/companies/browser-use",
+          "retrieved_at": "2026-09-08T18:03:02+00:00"
+        }
+      ]
+    },
+    {
+      "name": "Asteroid",
+      "website": "https://www.asteroid.ai",
+      "description": "An AI-powered integration layer for healthcare systems, payer portals, and legacy desktop software.",
+      "freshness_signal": "YC's automation directory lists Asteroid as W25, active, and says it has 100+ pre-built integrations.",
+      "source_url": "https://www.ycombinator.com/companies/asteroid",
+      "founder_signal": "Founded in 2024 by Joe Hewett and David Mlcoch; YC lists 8 employees in San Francisco.",
+      "market_note": "Healthcare integration pain is specific and expensive. If integration maintenance is real, it could become a credible workflow-data and distribution advantage.",
+      "risk_notes": [
+        "Healthcare compliance and EHR integration reliability are high-stakes.",
+        "Validate the claimed integration breadth and implementation time.",
+        "A platform story must resolve to a concrete operational buyer and first workflow."
+      ],
+      "scores": {
+        "workflow": 21,
+        "wedge": 16,
+        "demand": 14,
+        "team": 9,
+        "defensibility": 8,
+        "execution": 5
+      },
+      "evidence": [
+        {
+          "claim": "YC's public company page titles Asteroid as the integration layer for healthcare EHRs and payer portals, founded in 2024 by Joe Hewett and David Mlcoch with 8 employees in San Francisco.",
+          "source_url": "https://www.ycombinator.com/companies/asteroid",
+          "retrieved_at": "2026-09-08T18:03:02+00:00"
+        },
+        {
+          "claim": "YC's automation directory lists Asteroid as W25, active, and says it has 100+ pre-built integrations.",
+          "source_url": "https://www.ycombinator.com/companies/asteroid",
+          "retrieved_at": "2026-09-08T18:03:02+00:00"
+        }
+      ]
+    },
+    {
+      "name": "Quantstruct",
+      "website": "https://quantstruct.com",
+      "description": "AI agents that create and maintain product documentation, implementation guides, and changelogs for software teams.",
+      "freshness_signal": "YC's automation directory lists Quantstruct as W25 and describes agents that inspect product knowledge and enterprise software to improve documentation.",
+      "source_url": "https://www.ycombinator.com/companies/quantstruct",
+      "founder_signal": "Founded in 2025 by Newman Hu and Sarthak Srinivas; YC lists 2 employees in San Francisco.",
+      "market_note": "Documentation work is frequent and expensive, with an understandable buyer. The company needs to show that its workflow is more than a feature of an existing documentation platform.",
+      "risk_notes": [
+        "Product documentation is a crowded AI feature surface.",
+        "Autonomous browser interactions may be unreliable.",
+        "Verify that customers pay for continuous improvement rather than periodic content generation."
+      ],
+      "scores": {
+        "workflow": 19,
+        "wedge": 14,
+        "demand": 11,
+        "team": 9,
+        "defensibility": 6,
+        "execution": 7
+      },
+      "evidence": [
+        {
+          "claim": "YC's public company page titles Quantstruct as an AI documentation engineer that tests and auto-improves stale product docs, founded in 2025 by Newman Hu and Sarthak Srinivas with 2 employees in San Francisco.",
+          "source_url": "https://www.ycombinator.com/companies/quantstruct",
+          "retrieved_at": "2026-09-08T18:03:02+00:00"
+        },
+        {
+          "claim": "YC's automation directory lists Quantstruct as W25 and describes agents that inspect product knowledge and enterprise software to improve documentation.",
+          "source_url": "https://www.ycombinator.com/companies/quantstruct",
+          "retrieved_at": "2026-09-08T18:03:02+00:00"
+        }
+      ]
+    },
+    {
+      "name": "Lucidic AI",
+      "website": "https://lucidic.ai",
+      "description": "A learning system intended to help AI agents build memory, skills, critique, practice, and improvement loops from experience.",
+      "freshness_signal": "YC's automation directory lists Lucidic as W25 and active.",
+      "source_url": "https://www.ycombinator.com/companies/lucidic-ai",
+      "founder_signal": "Founded in 2025 by Andy Liang, Abhinav Sinha, and Jeremy Tian; YC lists the team in San Francisco.",
+      "market_note": "Learning and memory are important agent infrastructure problems, but the public positioning does not yet identify a narrow operational buyer or workflow.",
+      "risk_notes": [
+        "A conceptual platform claim needs a sharply defined first use case.",
+        "Model-platform vendors can absorb broad learning-layer features.",
+        "Validate repeatable ROI outside benchmark demonstrations."
+      ],
+      "scores": {
+        "workflow": 8,
+        "wedge": 12,
+        "demand": 9,
+        "team": 9,
+        "defensibility": 6,
+        "execution": 7
+      },
+      "evidence": [
+        {
+          "claim": "YC's public company page titles Lucidic AI as reimagining how machines learn, founded in 2025 by Andy Liang, Abhinav Sinha, and Jeremy Tian in San Francisco.",
+          "source_url": "https://www.ycombinator.com/companies/lucidic-ai",
+          "retrieved_at": "2026-09-08T18:03:02+00:00"
+        },
+        {
+          "claim": "YC's automation directory lists Lucidic as W25 and active.",
+          "source_url": "https://www.ycombinator.com/companies/lucidic-ai",
+          "retrieved_at": "2026-09-08T18:03:02+00:00"
+        }
+      ]
+    },
+    {
+      "name": "Decisional AI",
+      "website": "https://decisional.ai",
+      "description": "A platform for creating self-healing automation agents that work across existing applications.",
+      "freshness_signal": "YC's automation directory lists Decisional as S24, active, and describes natural-language workflow creation and background execution.",
+      "source_url": "https://www.ycombinator.com/companies/decisional-ai",
+      "founder_signal": "Founded in 2024 by Sai Neeraj Kanuri, Adit Sanghvi, and Dhruv Tandon; YC lists 3 employees in San Francisco.",
+      "market_note": "Self-healing automation speaks to a real reliability problem, but the positioning remains horizontal. A vertical buyer and repeatable distribution motion would improve the thesis fit.",
+      "risk_notes": [
+        "Horizontal automation is a congested market.",
+        "Production reliability and permissions require careful controls.",
+        "Validate whether 'self-healing' is observable in customer operations."
+      ],
+      "scores": {
+        "workflow": 14,
+        "wedge": 12,
+        "demand": 12,
+        "team": 9,
+        "defensibility": 5,
+        "execution": 6
+      },
+      "evidence": [
+        {
+          "claim": "YC's public company page titles Decisional AI as AI coworkers for business automation, founded in 2024 by Sai Neeraj Kanuri, Adit Sanghvi, and Dhruv Tandon with 3 employees in San Francisco.",
+          "source_url": "https://www.ycombinator.com/companies/decisional-ai",
+          "retrieved_at": "2026-09-08T18:03:02+00:00"
+        },
+        {
+          "claim": "YC's automation directory lists Decisional as S24, active, and describes natural-language workflow creation and background execution.",
+          "source_url": "https://www.ycombinator.com/companies/decisional-ai",
+          "retrieved_at": "2026-09-08T18:03:02+00:00"
+        }
+      ]
+    },
+    {
+      "name": "Sage Care",
+      "website": "https://sagecare.ai",
+      "description": "A HIPAA-compliant AI-native communication platform for home-care agency client intake.",
+      "freshness_signal": "YC's automation directory lists Sage as S24 and says teams can save more than 100 minutes of busywork per prospect.",
+      "source_url": "https://www.ycombinator.com/companies/sagecare",
+      "founder_signal": "Founded in 2024 by Ian Gillis and Jon Levinson; YC lists 3 employees in San Francisco.",
+      "market_note": "Home-care intake is a narrow, high-frequency operational job with a stated time-saving outcome. It is a good example of the thesis, subject to validating the metric and retention.",
+      "risk_notes": [
+        "HIPAA and communication compliance must be production-grade.",
+        "The buyer's switching cost and workflow fit need reference validation.",
+        "A narrow vertical can constrain expansion if adjacent workflows are not credible."
+      ],
+      "scores": {
+        "workflow": 24,
+        "wedge": 18,
+        "demand": 15,
+        "team": 9,
+        "defensibility": 7,
+        "execution": 6
+      },
+      "evidence": [
+        {
+          "claim": "YC's public company page titles Sage Care as automating home care agency operations with AI, founded in 2024 by Ian Gillis and Jon Levinson with 3 employees in San Francisco.",
+          "source_url": "https://www.ycombinator.com/companies/sagecare",
+          "retrieved_at": "2026-09-08T18:03:02+00:00"
+        },
+        {
+          "claim": "YC's automation directory lists Sage as S24 and says teams can save more than 100 minutes of busywork per prospect.",
+          "source_url": "https://www.ycombinator.com/companies/sagecare",
+          "retrieved_at": "2026-09-08T18:03:02+00:00"
+        }
+      ]
+    },
+    {
+      "name": "Parallel",
+      "website": "https://parallel.ai",
+      "description": "AI agents that automate healthcare administrative workflows, starting with medical coding.",
+      "freshness_signal": "YC's automation directory lists Parallel as S24 and active, with a stated focus on navigating legacy hospital software.",
+      "source_url": "https://www.ycombinator.com/companies/parallel",
+      "founder_signal": "Founded in 2024 by Paul Lafforgue; YC lists 15 employees based in Paris, France.",
+      "market_note": "Medical coding is a costly and measurable administrative workflow. The thesis fit is strong, while regulatory exposure and enterprise hospital procurement make execution difficult.",
+      "risk_notes": [
+        "Coding accuracy and auditability are non-negotiable.",
+        "Hospital purchasing cycles may be long.",
+        "Validate liability allocation and human review requirements."
+      ],
+      "scores": {
+        "workflow": 24,
+        "wedge": 18,
+        "demand": 14,
+        "team": 9,
+        "defensibility": 8,
+        "execution": 5
+      },
+      "evidence": [
+        {
+          "claim": "YC's public company page titles Parallel as AI agents for healthcare admin, founded in 2024 by Paul Lafforgue with 15 employees in Paris, France.",
+          "source_url": "https://www.ycombinator.com/companies/parallel",
+          "retrieved_at": "2026-09-08T18:03:02+00:00"
+        },
+        {
+          "claim": "YC's automation directory lists Parallel as S24 and active, with a stated focus on navigating legacy hospital software.",
+          "source_url": "https://www.ycombinator.com/companies/parallel",
+          "retrieved_at": "2026-09-08T18:03:02+00:00"
+        }
+      ]
+    },
+    {
+      "name": "Manifold Freight",
+      "website": "https://manifoldfreight.com",
+      "description": "Software that aggregates spot-freight opportunities and automates booking work for carriers, brokers, and shippers.",
+      "freshness_signal": "YC's automation directory lists Manifold as W24 and reports $5,100 monthly revenue after two months in its public company description.",
+      "source_url": "https://www.ycombinator.com/companies/manifold-freight",
+      "founder_signal": "Founded in 2024 by Andrew Huff and Oliver Jones; YC lists 5 employees in Seattle. YC's public profile describes founders as former Convoy engineering leaders who worked on freight automation at scale.",
+      "market_note": "Freight procurement is operationally painful and highly measurable. The company is outside the strict AI-agent framing but is included as a useful control: workflow economics matter more than AI branding.",
+      "risk_notes": [
+        "Marketplace liquidity and integration access can be difficult.",
+        "The public revenue figure is early and should not be extrapolated.",
+        "Validate whether automation changes carrier economics in a durable way."
+      ],
+      "scores": {
+        "workflow": 20,
+        "wedge": 12,
+        "demand": 12,
+        "team": 13,
+        "defensibility": 5,
+        "execution": 6
+      },
+      "evidence": [
+        {
+          "claim": "YC's public company page titles Manifold Freight as aggregating spot freight opportunities for carriers, founded in 2024 by Andrew Huff and Oliver Jones with 5 employees in Seattle.",
+          "source_url": "https://www.ycombinator.com/companies/manifold-freight",
+          "retrieved_at": "2026-09-08T18:03:02+00:00"
+        },
+        {
+          "claim": "YC's automation directory lists Manifold as W24 and reports $5,100 monthly revenue after two months in its public company description.",
+          "source_url": "https://www.ycombinator.com/companies/manifold-freight",
+          "retrieved_at": "2026-09-08T18:03:02+00:00"
+        }
+      ]
+    },
+    {
+      "name": "AutoPallet Robotics",
+      "website": "https://autopallet.bot",
+      "description": "Warehouse robotics for low-cost case picking and mixed-SKU palletization in existing warehouses.",
+      "freshness_signal": "YC's automation directory lists AutoPallet as S24 and describes a lower-cost installation approach for warehouse automation.",
+      "source_url": "https://www.ycombinator.com/companies/autopallet-robotics",
+      "founder_signal": "Founded in 2024 by Eric Miller and Nathan Yee; YC lists 6 employees in San Francisco.",
+      "market_note": "Warehouse labor is a clear costly workflow, but hardware deployment and capital intensity make this a poor fit for the software-oriented implementation thesis.",
+      "risk_notes": [
+        "Hardware reliability and deployment create capital and support needs.",
+        "Warehouse integrations and safety requirements slow sales.",
+        "Validate unit economics against established automation vendors."
+      ],
+      "scores": {
+        "workflow": 20,
+        "wedge": 13,
+        "demand": 11,
+        "team": 9,
+        "defensibility": 7,
+        "execution": 3
+      },
+      "evidence": [
+        {
+          "claim": "YC's public company page titles AutoPallet Robotics as robots that move boxes in warehouses, founded in 2024 by Eric Miller and Nathan Yee with 6 employees in San Francisco.",
+          "source_url": "https://www.ycombinator.com/companies/autopallet-robotics",
+          "retrieved_at": "2026-09-08T18:03:02+00:00"
+        },
+        {
+          "claim": "YC's automation directory lists AutoPallet as S24 and describes a lower-cost installation approach for warehouse automation.",
+          "source_url": "https://www.ycombinator.com/companies/autopallet-robotics",
+          "retrieved_at": "2026-09-08T18:03:02+00:00"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "source": "Y Combinator public company pages",
+  "fetched_at": "2026-09-08T18:03:02+00:00",
+  "seed_file": "data/yc_company_urls.json",
+  "pages": [
+    {
+      "source_url": "https://www.ycombinator.com/companies/leaping-ai",
+      "title": "Leaping AI: AI voice and texting agents | Y Combinator",
+      "description": "AI voice and texting agents. Founded in 2023 by Arkadiy Telegin and Kevin Wu, Leaping AI has 13 employees based in San Francisco. Leaping AI is hiring for 2 roles in operations and engineering.",
+      "fetched_at": "2026-09-08T18:03:02+00:00",
+      "content_sha256": "371f3b35a0a0e282e079e4f7bb559d09afc88fc26ae42aeb30ac8d6323eafa79"
+    },
+    {
+      "source_url": "https://www.ycombinator.com/companies/peppr-ai",
+      "title": "Peppr AI: In-call AI teleprompter that helps reps close enterprise deals | Y Combinator",
+      "description": "In-call AI teleprompter that helps reps close enterprise deals. Founded in 2025 by Nitya Arora and Sachitt Arora, Peppr AI has 4 employees based in San Francisco. Peppr AI is hiring for 3 roles in engineering.",
+      "fetched_at": "2026-09-08T18:03:02+00:00",
+      "content_sha256": "f2b7ae299a1e164849b255e5437b375bb79004a4a45e9d909a37f297984f29bd"
+    },
+    {
+      "source_url": "https://www.ycombinator.com/companies/osmosis",
+      "title": "Osmosis: Reinforcement Learning (RL) for AI Agents | Y Combinator",
+      "description": "Reinforcement Learning (RL) for AI Agents. Founded in 2024 by Andy Lyu and Kasey Zhang, Osmosis has 6 employees based in San Francisco. Osmosis is hiring for 1 roles in engineering.",
+      "fetched_at": "2026-09-08T18:03:02+00:00",
+      "content_sha256": "9858b63fcc53c47de3e29cc3e1f781bd4bd85441c98509f7f73c3937b45d30ba"
+    },
+    {
+      "source_url": "https://www.ycombinator.com/companies/browser-use",
+      "title": "Browser Use: Agents that use the browser. | Y Combinator",
+      "description": "Agents that use the browser. Founded in 2024 by Magnus M\u00fcller and Gregor Zunic, Browser Use has 7 employees based in San Francisco. Browser Use is hiring for 5 roles in engineering.",
+      "fetched_at": "2026-09-08T18:03:02+00:00",
+      "content_sha256": "fc7c2a67edd3286bb183135df7812b55f06da99a707747c831fc17e98a6f4378"
+    },
+    {
+      "source_url": "https://www.ycombinator.com/companies/asteroid",
+      "title": "Asteroid: The integration layer for healthcare: EHRs, payer portals & more  | Y Combinator",
+      "description": "The integration layer for healthcare: EHRs, payer portals & more . Founded in 2024 by Joe Hewett and David Mlcoch, Asteroid has 8 employees based in San Francisco.",
+      "fetched_at": "2026-09-08T18:03:02+00:00",
+      "content_sha256": "8fd5c7c08107e946e3124557ef5b55ba442815a83231ef1f82c2f5535da50695"
+    },
+    {
+      "source_url": "https://www.ycombinator.com/companies/quantstruct",
+      "title": "Quantstruct: AI documentation engineer \u2013\u00a0test & autoimprove stale product docs | Y Combinator",
+      "description": "AI documentation engineer \u2013\u00a0test & autoimprove stale product docs. Founded in 2025 by Newman Hu and Sarthak Srinivas, Quantstruct has 2 employees based in San Francisco.",
+      "fetched_at": "2026-09-08T18:03:02+00:00",
+      "content_sha256": "777a2ec70c2776c210ee598ee616827593c34aa8822c150cf2a4a003f5e3196c"
+    },
+    {
+      "source_url": "https://www.ycombinator.com/companies/lucidic-ai",
+      "title": "Lucidic AI: Reimagining how Machines Learn  | Y Combinator",
+      "description": "Reimagining how Machines Learn . Founded in 2025 by Andy Liang, Abhinav Sinha, and Jeremy Tian, Lucidic AI has  employees based in San Francisco.",
+      "fetched_at": "2026-09-08T18:03:02+00:00",
+      "content_sha256": "aff80678161c9ea4cde993925fa4132926406d7c5b90dc41a1db66d56ca57ef1"
+    },
+    {
+      "source_url": "https://www.ycombinator.com/companies/decisional-ai",
+      "title": "Decisional AI: AI Coworkers for Business Automation | Y Combinator",
+      "description": "AI Coworkers for Business Automation. Founded in 2024 by Sai Neeraj Kanuri, Adit Sanghvi, and Dhruv Tandon, Decisional AI has 3 employees based in San Francisco.",
+      "fetched_at": "2026-09-08T18:03:02+00:00",
+      "content_sha256": "b676c8f53147522a524694ddb5f441674b8e91fec14049de70113217cf1e3414"
+    },
+    {
+      "source_url": "https://www.ycombinator.com/companies/sagecare",
+      "title": "Sage Care: Automating home care agency operations with AI | Y Combinator",
+      "description": "Automating home care agency operations with AI. Founded in 2024 by Ian Gillis and Jon Levinson, Sage Care has 3 employees based in San Francisco. Sage Care is hiring for 1 roles in engineering.",
+      "fetched_at": "2026-09-08T18:03:02+00:00",
+      "content_sha256": "b133d93139a7bf007b0f105852489f60f043dee5c8dcc449e5c23d99f2ac9e26"
+    },
+    {
+      "source_url": "https://www.ycombinator.com/companies/parallel",
+      "title": "Parallel: AI agents for healthcare admin | Y Combinator",
+      "description": "AI agents for healthcare admin. Founded in 2024 by Paul Lafforgue, Parallel has 15 employees based in Paris, France.",
+      "fetched_at": "2026-09-08T18:03:02+00:00",
+      "content_sha256": "0e351d667f45a4d3be9057b474e01b6dfd862ed77aaed9fe6c3b3d2ce46e5b44"
+    },
+    {
+      "source_url": "https://www.ycombinator.com/companies/manifold-freight",
+      "title": "Manifold Freight: Aggregating Spot Freight Opportunities for Carriers | Y Combinator",
+      "description": "Aggregating Spot Freight Opportunities for Carriers. Founded in 2024 by Andrew Huff and Oliver Jones, Manifold Freight has 5 employees based in Seattle.",
+      "fetched_at": "2026-09-08T18:03:02+00:00",
+      "content_sha256": "a01f1136e9d537a5ec03faf4e075238426697d3e7eedf7c1c4f8a63a6cc51e3a"
+    },
+    {
+      "source_url": "https://www.ycombinator.com/companies/autopallet-robotics",
+      "title": "AutoPallet Robotics: We make robots that move boxes in warehouses | Y Combinator",
+      "description": "We make robots that move boxes in warehouses. Founded in 2024 by Eric Miller and Nathan Yee, AutoPallet Robotics has 6 employees based in San Francisco.",
+      "fetched_at": "2026-09-08T18:03:02+00:00",
+      "content_sha256": "b13338592259347336b840c49ef7433e42d9b14ed6e2c7f307ca957045a74a8a"
+    }
+  ]
+}
